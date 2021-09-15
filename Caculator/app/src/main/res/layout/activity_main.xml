@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_main"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_marginTop="30dp"
+        android:ellipsize="start"
+        android:gravity="end"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        tools:text="100+100" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:gravity="end"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        tools:text="200" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:onClick="onClear"
+                android:id="@+id/btnAC"
+                style="@style/btnOper"
+                android:text="AC" />
+
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/btnDel"
+                style="@style/btnOper"
+                android:text="/" />
+
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/btnPr"
+                style="@style/btnOper"
+                android:text="X" />
+
+            <Button
+                android:onClick="onBack"
+                android:id="@+id/btnClear"
+                style="@style/btnOper"
+                android:text="←" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/num7"
+                style="@style/btnNum"
+                android:text="7" />
+
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/num8"
+                style="@style/btnNum"
+                android:text="8" />
+
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/num9"
+                style="@style/btnNum"
+                android:text="9" />
+
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/btnMin"
+                style="@style/btnOper"
+                android:text="-" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/num4"
+                style="@style/btnNum"
+                android:text="4" />
+
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/num5"
+                style="@style/btnNum"
+                android:text="5" />
+
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/num6"
+                style="@style/btnNum"
+                android:text="6" />
+
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/btnPlus"
+                style="@style/btnOper"
+                android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/num1"
+                style="@style/btnNum"
+                android:text="1" />
+
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/num2"
+                style="@style/btnNum"
+                android:text="2" />
+
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/num3"
+                style="@style/btnNum"
+                android:text="3" />
+
+            <Button
+                android:onClick="onOperationClick"
+                android:id="@+id/btnSqrt"
+                style="@style/btnOper"
+                android:text="√" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:onClick="onOperationClick"
+                android:id="@+id/btnInv"
+                style="@style/btnOper"
+                android:text="+/-" />
+
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/num0"
+                style="@style/btnNum"
+                android:text="0" />
+
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/btnCom"
+                style="@style/btnNum"
+                android:text="." />
+
+            <Button
+                android:onClick="onOperationClick"
+                android:id="@+id/btnResult"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorRed"
+                android:text="="
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
